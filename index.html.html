@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> ZomatoFoodie Place</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            color: rgb(14, 9, 19);
+        }
+        h1, h2 {
+            color: #333333;
+        }
+    </style>
+    
+</head>
+<body>
+    <marquee behaviour=""direction="right">
+    <h1>ZomatoFoodie Place</h1>
+</marquee>
+<nav>
+    <a href="#Home">Home</a>&nbsp;&nbsp;&nbsp;
+    <a href="#Order">Order</a>&nbsp;&nbsp;&nbsp;
+    <a href="#Location">Location</a>&nbsp;&nbsp;&nbsp;
+    <a href="#Menu">Menu</a>&nbsp;&nbsp;&nbsp;
+    <a href="#Contact">Contact</a>
+</nav>
+
+
+<section id="Home">
+    <h2>Welcome to ZomatoFoodie Place!</h2>
+    <p>Discover a world of delicious food at ZomatoFoodie Place. We offer a variety of dishes to satisfy your cravings. Explore our menu and place your order online.</p>
+</section>
+
+
+<section id="Menu" class="items">
+    <h2>Menu</h2>
+    <p>Chapathi</p>
+    <p>Maggie</p>
+    <p>Biryani</p>
+    <p>Juice</p>
+    <p>Roti</p>
+    
+</section>
+
+
+<section id="Contact">
+    <h2>Contact</h2>
+    <p>Have questions or feedback? Reach out to us!</p>
+    <p> Email: <a href="Ammas:info@zomatofoodie.com">info@zomatofoodie.com</a></p>
+    <p>Phone:99988877766</p>
+</section>
+
+<section id="Location">
+    <h2>Delivery Location</h2>
+    <p>Please set your delivery location:</p>
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="Enter your delivery address">
+    <button onclick="setDeliveryLocation()">Set Location</button>
+</section>
+
+<section id="Order">
+    <h2>Order Summary</h2>
+    <div id="cart">
+
+    </div>
+    <button onclick="placeOrder(maggie)">Place Order</button>
+</section><br><br>
+
+    <section class="items">
+        <div class="items">
+           
+            <img src="pizza.jpg"alt="pizza_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Eggpizza.jpg" alt="eggpizza_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="vegburger.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="cheeseburger.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="juice.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="pasta.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><p>Veg Pizza: 300 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chicken Pizza: 350 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burger: 60 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chicken Burger:200 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PineApple Juice:40 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pasta:150 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+            <img src="roti.jpg"alt="roti_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="biryani.jpg" alt="biryani_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="vegpalav.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="idli.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="dosa.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="mushroom.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br><p>Roti:200 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chicken Biryani:200 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veg Pulao:120 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Idli:60 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dosa:95 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mushroom:100 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+            <img src="poori.jpg"alt="poori_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="chapathi.jpg" alt="chapathi_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="lemonrice.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="puliogare.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="vangibath.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="upma.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <p>Poori: 80 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chapathi: 60 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lemon Rice: 40 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puilogare:30<button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VangiBath:90 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbspUpma:80 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+            
+            <img src="maggie.jpg"alt="maggie_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="sandwitch.jpg" alt="sandwitch_logo"controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="grape.jpg.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="watermelon.jpg" controls height= 150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="oreo.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="pongal.jpg" controls height= "150" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <p>Maggie: 50 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sandwitch: 80 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grape Juice: 80 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Water Melon Juice:80 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oreo Juice:70 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pongal:40 <button>order</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+            
+            
+            
+        </div>
+        
+        
+    </section>
+    
+</body>
+</html>
